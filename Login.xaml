@@ -1,0 +1,28 @@
+﻿<Window x:Class="RentARoom.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RentARoom"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <Grid>
+        <!-- Username Label -->
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="50,100,0,0" VerticalAlignment="Top"/>
+        <!-- Username Textbox -->
+        <TextBox x:Name="UsernameTextBox" HorizontalAlignment="Left" Margin="150,100,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <!-- Password Label -->
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="50,150,0,0" VerticalAlignment="Top"/>
+        <!-- Password Textbox -->
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="150,150,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <!-- Login Button -->
+        <Button Content="Login" Click="LoginButton_Click" HorizontalAlignment="Left" Margin="50,200,0,0" VerticalAlignment="Top" Width="100"/>
+        <!-- Register Button -->
+        <Button Content="Register" Click="RegisterButton_Click" HorizontalAlignment="Left" Margin="170,200,0,0" VerticalAlignment="Top" Width="100"/>
+        <!-- Admin Login Button -->
+        <Button Content="Admin Login" HorizontalAlignment="Left" Margin="290,200,0,0" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>

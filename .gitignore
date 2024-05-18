@@ -1,0 +1,5 @@
+.vs/
+*.suo
+RentARoom.csproj.user
+*.userossc
+*.sln.docstates

@@ -1,0 +1,20 @@
+﻿RentARoom
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\Gebruiker\OneDrive - Thomas More\Bureaublad\c# project\RentARoom\obj\Debug\net8.0-windows\
+RentARoom
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\Users\Gebruiker\OneDrive - Thomas More\Bureaublad\c# project\RentARoom\App.xaml
+8-1197826489
+
+152093779270
+200771094567
+Add a Room.xaml;DeleteRentalWindow.xaml;EditRentalWindow.xaml;Login.xaml;MainWindow.xaml;ReleaseRoomWindow.xaml;RentalSystem.xaml;RentRoomWindow.xaml;
+
+True
+

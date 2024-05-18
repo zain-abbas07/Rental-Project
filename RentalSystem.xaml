@@ -1,0 +1,42 @@
+﻿<Window x:Class="RentARoom.RentalSystem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RentalSystem" Height="450" Width="800">
+    <Grid>
+        <!-- Header -->
+        <Grid Background="#2C3E50" Height="50" VerticalAlignment="Top">
+            <TextBlock Text="Rental System" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Foreground="White"/>
+        </Grid>
+
+        <!-- Main Content -->
+        <Grid Margin="20,70,20,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Welcome Text -->
+            <TextBlock Grid.Row="0" Text="Welcome to the Rental System!" FontSize="18" Margin="10"/>
+
+            <!-- Buttons -->
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
+                <Button Content="Add Rental" Click="AddRentalButton_Click" Margin="5"/>
+                <Button Content="Edit Rental" Click="EditRentalButton_Click" Margin="5"/>
+                <Button Content="Delete Rental" Click="DeleteRentalButton_Click" Margin="5"/>
+                <Button Content="Rent Room" Click="RentRoomButton_Click" Margin="5"/>
+                <Button Content="Release Room" Click="ReleaseRoomButton_Click" Margin="5"/>
+            </StackPanel>
+
+            <!-- Data Grid for displaying rooms -->
+            <DataGrid Grid.Row="2" Name="RoomDataGrid" ItemsSource="{Binding AllRooms}" AutoGenerateColumns="False" Margin="0,20">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Room Number" Binding="{Binding RoomNumber}" Width="*"/>
+                    <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*"/>
+                    <DataGridTextColumn Header="Price Per Night" Binding="{Binding PricePerNight}" Width="*"/>
+                    <DataGridTextColumn Header="Available" Binding="{Binding IsAvailable}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>
